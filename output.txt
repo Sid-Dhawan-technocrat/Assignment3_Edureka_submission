@@ -1,0 +1,74 @@
+class restaurantManager {
+    //part 1
+    //array of objects
+    restaurantList = [
+        {
+            id:1,
+            restaurantname:"KFC",
+            address:"Anand Vihar",
+            city:"Delhi",
+        },
+        {
+            id: 2,
+            restaurantname: "Dominos",
+            address: "Savita Vihar",
+            city: "Delhi",
+          },
+          {
+            id: 3,
+            restaurantname: "Burger King",
+            address: "Civil Lines",
+            city: "Pune",
+          },
+          {
+            id: 4,
+            restaurantname: "Subway",
+            address: "Cantonment",
+            city: "Mumbai",
+          },
+    ];
+
+    printAllRestaurantNames=()=>{
+        return this.restaurantList.map((data)=>{
+            return data.restaurantname;
+        });
+    };
+
+    filterRestaurantByCity=(cityName)=>{
+        return this.restaurantList.filter((data)=>{
+            return data.city==cityName;
+        });
+    };
+}
+
+2(a).Calculate the total number of orders placed for the restaurant?
+199
+2(b). Calculate the number of order proportion options.
+The number of order proportions is5
+2(c) Calculate the percentage of each proportion in below format
+
+Array(5) [ {…}, {…}, {…}, {…}, {…} ]
+​
+0: Object { id: 1, order: "Below 500", order_Percent: "10.05", … }
+​​
+id: 1
+​​
+order: "Below 500"
+​​
+order_Percent: "10.05"
+​​
+restaurant: "Punjabi Tadka"
+​​
+<prototype>: Object { … }
+​
+1: Object { id: 2, order: "500-1000", order_Percent: "14.57", … }
+​
+2: Object { id: 3, order: "1000-1500", order_Percent: "15.08", … }
+​
+3: Object { id: 4, order: "1500-2000", order_Percent: "22.11", … }
+​
+4: Object { id: 5, order: "Above 2000", order_Percent: "38.19", … }
+​
+length: 5
+​
+<prototype>: Array []
